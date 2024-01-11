@@ -26,6 +26,27 @@ To install this package, use npm and add it as a development dependency to your 
 npm i -D comgate-types
 ```
 
+## Usage
+
+This library only defines the types based on the documentation, therefore the usage is infinite and depends highly on you and your implementation.
+
+I recommend checking the files in the `src/types` directory and then using them in your project.
+
+Each type is exported, documentated and can be actually just copy-pasted into your project without installing the library.
+
+An example of usage:
+
+```typescript
+import type { IPaymentCreate, IPaymentCreateResponse } from 'comgate-types'
+
+const created_payment = async (options: IPaymentCreate): Promise<IPaymentCreateResponse> => {
+  return new Promise((resolve, reject) => {
+    // ... your logic here ...
+  })
+}
+```
+
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
