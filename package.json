@@ -1,0 +1,12 @@
+{
+  "name": "comgate-types",
+  "author": "asitanc",
+  "version": "1.0.0",
+  "description": "ComGate payment types",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ]
+}
