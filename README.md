@@ -1,4 +1,4 @@
-# comgate-types
+# comgate-payment-types
 
 The types were created based on documentation available [here](https://apidoc.comgate.cz/?lang=cs#tag_api_title-tag_api_payment_methods).
 
@@ -23,7 +23,7 @@ src/types/
 To install this package, use npm and add it as a development dependency to your project. Run the following command in your project directory:
 
 ```bash
-npm i -D comgate-types
+npm i -D comgate-payment-types
 ```
 
 ## Usage
@@ -37,7 +37,7 @@ Each type is exported, documentated and can be actually just copy-pasted into yo
 An example of usage:
 
 ```typescript
-import type { IPaymentCreate, IPaymentCreateResponse } from 'comgate-types'
+import type { IPaymentCreate, IPaymentCreateResponse } from 'comgate-payment-types'
 
 const created_payment = async (options: IPaymentCreate): Promise<IPaymentCreateResponse> => {
   return new Promise((resolve, reject) => {
